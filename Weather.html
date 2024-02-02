@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="Weather.js"></script>
+  <title>Weather App</title>
+  <style>
+    body {
+      background-image: url('https://www.saga.co.uk/contentlibrary/saga/publishing/verticals/technology/apps/shutterstock_240459751.jpg');
+      background-size: cover;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    #input-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border-radius: 5px;
+      width: 200px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: orange;
+      color: #000000;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #FFC700;
+    }
+
+    #result {
+      font-size: 20px;
+      color: black;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="input-container">
+    <h2>Type in the name of the city to get the weather details</h2>
+    <input type="text" id="cityNameInput" placeholder="Enter City Name" required>
+    <br>
+    <button onclick="getWeather()">Search</button>
+    <div id="result"></div>
+  </div>
+
+ 
+</body>
+</html>
